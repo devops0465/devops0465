@@ -1,0 +1,6 @@
+client_secret = ""
+rgname = "teja-rg"
+loc = "eastus"
+rgname1 = "teja-rg1"
+loc1 = "eastus"
+storageaccountname = "teja12345"
