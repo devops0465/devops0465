@@ -10,12 +10,6 @@ pool: Devops
 
 
 steps:
-- task: AzureKeyVault@2
-  inputs:
-    azureSubscription: 'azure portal'
-    KeyVaultName: 'Terraform-1'
-    SecretsFilter: '*'
-    RunAsPreJob: false
 
 - script: |
     # Replace variables in script.sh
