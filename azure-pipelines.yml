@@ -7,7 +7,7 @@ trigger:
 - none
 
 pool:
-  vmImage: Azure Pipelines
+  vmImage: devops
 
 steps:
 - script: echo Hello, world!
