@@ -1,3 +1,3 @@
 
 name=Teja
-echo "hello $name is secrete"
+echo "hello $1 is secrete"
