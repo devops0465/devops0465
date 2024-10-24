@@ -6,22 +6,10 @@
 trigger:
 - none
 
-pool:
-  vmImage: ubuntu-latest
-
-variables:
-   buildplatform: 
 steps:
-- task: NuGetToolInstaller@1
+- task: CmdLine@2
   inputs:
-    versionSpec: 
-- task: NuGetCommand@2
-  inputs:
-    command: 'restore'
-    restoreSolution: '**/*.sln'
-    feedsToUse: 'select'
-
-- task: VSBuild@1
-  inputs:
-    solution: '**\*.sln'
-
+    script: |
+      echo Write your commands here
+      
+      echo Hello world
