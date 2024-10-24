@@ -16,9 +16,8 @@ steps:
     KeyVaultName: 'Terraform-1'
     SecretsFilter: '*'
     RunAsPreJob: false
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: 'azure portal'
-    scriptType: 'bash'
-    scriptLocation: 'scriptPath'
-    scriptPath: 'script.sh'
+  
+- script: |
+    # Replace variables in script.sh
+    sed -i "s|\$name|$(name)|g"./script.sh
+    displayName: 'Replace Variables in Script'
