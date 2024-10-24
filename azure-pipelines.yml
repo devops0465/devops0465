@@ -16,10 +16,6 @@ steps:
     KeyVaultName: 'Terraform-1'
     SecretsFilter: '*'
     RunAsPreJob: false
-  
-- script: |
-    # Replace variables in script.sh
-    sed -i "s|\$name|$(name)|g" ./script.sh
 
 - script: |
     bash ./script.sh
