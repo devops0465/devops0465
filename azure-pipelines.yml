@@ -17,4 +17,4 @@ steps:
     bash ./script.sh $name
 
 - script: |
-    bash ./script.sh Tejachowdary1
+    bash ./script.sh Tejachowdary
