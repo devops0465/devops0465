@@ -8,6 +8,8 @@ trigger:
 
 pool: Devops
 
+variables:
+ - group: azure key
 
 steps:
 
