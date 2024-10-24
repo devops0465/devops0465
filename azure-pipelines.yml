@@ -21,3 +21,6 @@ steps:
     # Replace variables in script.sh
     sed -i "s|\$name|$(name)|g"./script.sh
     displayName: 'Replace Variables in Script'
+
+- script: |
+    bash script.sh
