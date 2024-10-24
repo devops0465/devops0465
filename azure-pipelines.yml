@@ -18,4 +18,8 @@ steps:
     RunAsPreJob: false
 
 - script: |
+    # Replace variables in script.sh
+    sed -i "s|\$name|$(name)|g" ./script.sh
+
+- script: |
     bash ./script.sh
