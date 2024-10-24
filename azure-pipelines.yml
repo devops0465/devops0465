@@ -8,11 +8,17 @@ trigger:
 
 pool: Devops
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+steps:
+- task: AzureKeyVault@2
+  inputs:
+    azureSubscription: 'azure portal'
+    KeyVaultName: 'Terraform-1'
+    SecretsFilter: '*'
+    RunAsPreJob: false
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'azure portal'
+    scriptType: 'bash'
+    scriptLocation: 'scriptPath'
+    scriptPath: 'script.sh'
