@@ -14,4 +14,4 @@ variables:
 steps:
 
 - script: |
-    bash ./script.sh
+    bash ./script.sh $name
