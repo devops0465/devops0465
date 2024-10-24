@@ -14,7 +14,7 @@ variables:
 steps:
 
 - script: |
-    bash ./script.sh $name
+    bash ./script.sh ${name}
 
 - script: |
     bash ./script.sh Tej
