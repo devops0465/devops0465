@@ -6,8 +6,7 @@
 trigger:
 - none
 
-pool:
-  vmImage: devops
+pool: Devops
 
 steps:
 - script: echo Hello, world!
