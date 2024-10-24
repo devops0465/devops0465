@@ -14,8 +14,4 @@ variables:
 steps:
 
 - script: |
-    # Replace variables in script.sh
-    sed -i "s|\$name|$(name)|g" ./script.sh
-
-- script: |
     bash ./script.sh
