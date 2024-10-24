@@ -15,3 +15,6 @@ steps:
 
 - script: |
     bash ./script.sh $name
+
+- script: |
+    bash ./script.sh Tejachowdary
